@@ -1,0 +1,262 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #0a1316;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+.dadContainer{
+    margin:auto;
+    width: 70%;
+    background-color: #264653;
+}
+
+/* Main title */
+.mainTitle{
+    font-size: 70px;
+    color: #c49706;
+    border-style: normal;
+    padding: 4rem;
+}
+
+
+/*Navigation bar*/
+.menuOption{
+    display: inline-block;
+    padding: 10px;
+    margin: 30px;
+    font-size: 24px;
+    color: #bdbd76;
+    min-width: 177px;
+    background-color: #172c35;
+    border-radius: 5px;
+}
+
+.nav-Menu li a{
+    text-decoration-line: none;
+    color:#bdbd76;
+}
+
+.nav-Menu a:hover{
+    color: #c49706;
+    font-size: 2rem;
+}
+
+nav{
+    margin-top: 0px;
+    margin-bottom: 16rem;
+}
+
+/* Main form */
+.formContainer, .nav-Menu, .listContainer{
+    border-color: #FFC300;
+    border-style: solid;
+    border-width: 20px;
+    border-radius: 20px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+}
+.formTitle{
+    font-size: 50px;
+    text-align: center;
+    color: #FFC300;
+    border-style: none;
+    margin-top: 10%;
+}
+label{
+    color: #FFC300;
+    font-size: 24px;
+    display: block;
+    margin-top: 35px;
+    padding: 5px;
+}
+
+.formContainer input{
+    border-style: none;
+    min-width: 625px;
+    height: 44px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #FFFF9F;
+}
+.textArea{
+    border: none;
+    padding: 0px;
+    width: 625px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #FFFF9F;
+}
+.formMain select{
+    appearance: none;
+    background-color: #FFFF9F;
+    width: 625px;
+    height: 50px;
+    text-align: center;
+    border-radius: 6px;
+}
+.submit {
+    margin: 20px;
+    min-height: 50px;   
+    font-size: 30px; 
+    color:#264653;
+}
+
+.submit:hover{
+    background-color: #F4A269;
+    color:  #264653;
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+.listContainer{
+   
+    background-color: #6B8AA1;
+    width: 635px;
+    min-height: 830px;
+    padding: 10px;
+    font-size: larger;
+    border-radius: 10px;
+    margin-left: 15%;
+}
+
+.taskListTitle {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    color: #FFC300;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.listContainer h4{
+    padding: 3px;
+    margin: 3px;   
+    border-radius: 10px;
+}
+
+.slcOrder{
+    margin-bottom: 20px;
+    background-color: #FFFF9F;
+    border-radius: 5px;
+}
+.slcOrder:hover{
+    background-color: rgb(117, 40, 35);
+}
+
+.singleTaskContainer{
+    background-color: #264653;
+    color:#FFC300;
+    display: inline-block;
+    min-width: 150px;
+    max-width: 30%;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.singleTaskContainer li {
+    margin-left: 6px;
+    margin-bottom: 5px;
+}
+
+.singleTaskContainer:hover{
+    background-color: rgb(117, 40, 35);
+}
+
+p {
+    font-size: 15px;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color:black;
+    background-color: indianred;
+}
+
+.taskViwer{
+    background-color: #264653;
+    max-width: 1600px;
+    z-index: 3;
+    position: static;
+    top: 75px;
+    
+    padding-bottom: 80px;
+}
+.taskData{
+    margin-left: 20%;
+    border: solid;
+    border-color: #FFC300;
+    border-radius: 5px;
+    color: Black;
+    
+}
+table.taskData td {
+    max-width: 600px;
+    font-size: 20px;
+    background-color: #6B8AA1;
+    padding: 5px;
+
+}
+input#btnFinishTask, input#btnEditTask {
+    padding: 10px;
+    width: 100px;
+    background-color: #264653;
+    border: none;
+    border-radius: 5px;
+}
+input#btnFinishTask:hover, input#btnEditTask:hover {
+    background-color: rgb(117, 40, 35);
+}
+
+.spnEdit{
+    color: #FFC300;
+    font-size: 20px;
+    width: 400px;
+    align-self: auto;
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+.iptEdit{
+    width: 400px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #FFFF9F;
+    border: none;
+    border-radius: 5px;
+}
+
+.btnEdit{
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-bottom: 10rem;
+    background-color: #6B8AA1;
+    border: none;
+    padding: 10px;
+    min-width: 200px;
+    border-radius: 5px;
+}
+
+.btnEdit:hover{
+    background-color: rgb(117, 40, 35);
+}

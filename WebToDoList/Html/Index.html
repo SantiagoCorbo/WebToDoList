@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="../Css/Style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="dadContainer">
+    
+    <header class="header" >
+        <h1 class="mainTitle" >Aplicación de tareas</h1>
+    </header>
+    <nav class="nav-Menu" >
+        <ul id="menu" class="menu">
+            <li class="menuOption"><a href="#formTitle">Ingresar tarea</a></li>
+            <li class="menuOption"><a href="#taskListTitle">Lista de tareas</a></li>
+            <li class="menuOption"><a href="mailto: s.corbob@hotmail.com">Contacto(E-mail)</a></li>
+        </ul>
+    </nav>
+    <main class="mainContainer">
+    
+    <div class="taskViwer" id="taskViwer"></div>
+    
+    <div class="formContainer">
+        <h2 class="formTitle hideOrShow" id="formTitle">Ingresar tarea</h2>
+        <form action="" id="formMain" class="formMain hideOrShow" >   
+                <label>Nombre de tarea</label>
+                <input type="text" id="taskName" placeholder="Ingrese el nombre de la tarea" required="true">
+                <label>Nombre de responsable por la tarea</label>
+                <input type="text" id="taskResponsible" placeholder="Ingrese el responsable de la tarea" required="true"> 
+                <label>Ingrese la fecha a finalizar la tarea</label>
+                <input type="date" name="" id="taskFinishDate" >
+                <label>Ingrese una descripción de la tarea a realizar</label>
+                <textarea name="" id="taskDescription" class="textArea" required="true"></textarea>
+                <label>¿Ya está terminada la tarea?</label>
+                <select id="slcFinished">
+                    <option value="0">No finalizada</option>
+                    <option value="1">Finalizada</option>
+                </select>
+                <br>
+                <input type="submit" class="submit" value="Ingresar tarea" id="submitTask">
+        </form>
+    </div>
+    
+        <h2 class="taskListTitle hideOrShow" id="taskListTitle">Lista de tareas</h2>        
+        <select id='slcOrder' class="slcOrder hideOrShow">
+            <option name='allTask' value='0'>Todas las tareas</option>
+            <option name='notFinished' value='1'>Tareas sin finalizar</option>                
+            <option name='finished' value='2'>Tareas finalizadas</option>          
+        </select>
+        <div  class="listContainer hideOrShow" >            
+            <div id="taskListContainer" class="taskListContainer">
+            </div>            
+        </div>
+               
+    </main>
+     <!-- SCRIPT -->     
+     <script src="../JS/Main.js"></script>
+    </div>
+</body>
+</html>
